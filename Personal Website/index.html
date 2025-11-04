@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=en/index.html">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- SEO Meta Tags -->
+    <title>Mohamed Shahin - Business Coach & Entrepreneur</title>
+    <meta name="description" content="Redirecting to Mohamed Shahin's official website - Business Coach, Entrepreneur, and Strategic Advisor helping businesses scale and succeed.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mohamed Shahin - Business Coach & Entrepreneur">
+    <meta property="og:description" content="Business Coach, Entrepreneur, and Strategic Advisor helping businesses scale and succeed.">
+    <meta property="og:url" content="https://businesswithshahin.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://businesswithshahin.com/shahin.jpeg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="en/index.html" as="document">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .redirect-container {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        h1 {
+            margin: 0 0 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+        
+        .manual-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .manual-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="redirect-container">
+        <div class="spinner"></div>
+        <h1>Mohamed Shahin</h1>
+        <p>Redirecting to website...</p>
+        <a href="en/index.html" class="manual-link">Click here if not redirected</a>
+    </div>
+
+    <script>
+        // Immediate redirect
+        window.location.href = "en/index.html";
+        
+        // Fallback redirect after 2 seconds
+        setTimeout(function() {
+            if (window.location.href.indexOf("en/index.html") === -1) {
+                window.location.href = "en/index.html";
+            }
+        }, 2000);
+        
+        // Analytics tracking for redirect
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'redirect_from_root', {
+                'event_category': 'navigation',
+                'event_label': 'root_to_en'
+            });
+        }
+    </script>
+</body>
+</html>
