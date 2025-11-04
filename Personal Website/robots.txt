@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://businesswithshahin.com/sitemap.xml
+
+# Crawl-delay for bots
+Crawl-delay: 1
+
+# Block access to test files
+Disallow: /test-form.html
+Disallow: /assets/
+
+# Allow specific assets that are important
+Allow: /assets/images/
+Allow: /assets/css/
+Allow: /assets/js/
+
+# Block common bot traps
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+Disallow: /*?source=*
